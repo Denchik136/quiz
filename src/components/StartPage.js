@@ -1,4 +1,7 @@
-function StartPage({ numQuestions, dispatch }) {
+import { useQuiz } from "../context/QuizContext"
+
+function StartPage() {
+    const { numQuestions, dispatch } = useQuiz()
 
     return (
         <div className="start">
